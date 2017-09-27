@@ -42,6 +42,10 @@ GEM
     builder (3.2.3)
     concurrent-ruby (1.0.5)
     crass (1.0.2)
+    dotenv (2.2.1)
+    dotenv-rails (2.2.1)
+      dotenv (= 2.2.1)
+      railties (>= 3.2, < 5.2)
     erubis (2.7.0)
     ffi (1.9.18)
     globalid (0.4.0)
@@ -122,6 +126,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  dotenv-rails
   listen (~> 3.0.5)
   pg
   phonelib
