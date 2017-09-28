@@ -14,7 +14,7 @@ module Api
 				if text.save
 					render status: :created, json: text
 				else
-					render status: :bad_request
+					render status: :bad_request, json: { errors: text.errors.full_messages }
 				end
 			end
 			
