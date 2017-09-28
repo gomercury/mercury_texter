@@ -6,12 +6,16 @@ module Api
 			respond_to :json
 
 			def create
-				text = Text.create(
+				text = Text.new(
 					to: params[:to],
 					from: params[:from],
 					body: params[:body],
 				)
-				render json: text
+				if text.save
+					render status: :created, json: text
+				else
+					render status: :bad_request
+				end
 			end
 			
 			private
