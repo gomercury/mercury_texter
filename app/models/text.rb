@@ -4,4 +4,8 @@ class Text < ApplicationRecord
 	validates :from, presence: true, phone: { possible: true }
 	validates :body, presence: true
 	validates :status, null: false
+
+	# scopes
+	scope :pending, -> { where(status: "pending") }
+	scope :failed, -> { where(status: "failed") }
 end

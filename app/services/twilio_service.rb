@@ -16,7 +16,8 @@ class TwilioService
 		rescue Twilio::REST::RestError => error
 			text.status = "failed"
 			text.error = error
-			text.save
 		end
+		text.save
+		return text
 	end
 end
