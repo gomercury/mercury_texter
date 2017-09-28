@@ -180,8 +180,6 @@ GEM
       libxml-ruby (= 3.0.0)
     tzinfo (1.2.3)
       thread_safe (~> 0.1)
-    validates_email_format_of (1.6.3)
-      i18n
     websocket-driver (0.6.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
@@ -203,7 +201,6 @@ DEPENDENCIES
   rspec-rails
   spring
   twilio-ruby (~> 5.0.0.rc26)
-  validates_email_format_of
 
 BUNDLED WITH
    1.16.0.pre.2

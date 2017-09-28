@@ -6,8 +6,6 @@ gem 'rails', '~> 5.0.6'
 gem 'pg'
 # Validates phone number. Read more: https://github.com/daddyz/phonelib
 gem 'phonelib'
-# Validate email format. Read more: https://github.com/validates-email-format-of/validates_email_format_of
-gem 'validates_email_format_of'
 # A set of Rails responders to dry up your application. Read more: https://github.com/plataformatec/responders
 gem 'responders'
 # Send text messages. Read more: https://github.com/twilio/twilio-ruby
