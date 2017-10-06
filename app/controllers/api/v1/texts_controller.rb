@@ -7,6 +7,7 @@ module Api
 
 			def create
 				text = Text.new(text_params)
+				text.from = Rails.application.secrets.number
 				if text.save
 					render status: 201, json: {
 						status: 201,
